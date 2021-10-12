@@ -1,0 +1,6 @@
+hatebase_key= 'uVeuGVrxBnYPFknhVvtqjgEtqvgjwCMw'
+twitter_api_key= 'TnmcLLxDlHxtJA0QJ0WvgWqLg'
+twitter_api_secret_key= 'PhW4yLG40E5z4j7iJQlVMOgplt9XUFMnHW0f35xdBa4nw88zbZ'
+twitter_bearer_token= 'AAAAAAAAAAAAAAAAAAAAADT%2FUAEAAAAAzPsdzS7r%2F3SxhiprJqMCSjpiiSc%3DG9LiilFNouTPMzmhY49iXuiGt5ZGlyxU3oKJkzql5Fe7Ue7s9F'
+twitter_access_token= '3434213404-jLN4nHB721dYxUsOrvad4JktymCAWVSxqtgaw7t'
+twitter_access_token_secret= 'pnfsXc3lePJwJ4Mk0J9kxLJfJTZPC2CJ9wNjVuDHqXQ5m'
