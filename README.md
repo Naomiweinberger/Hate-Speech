@@ -55,6 +55,7 @@ I started off with a Naive Bayes as the base model.
 ![base model](https://user-images.githubusercontent.com/78061842/137801475-ff32e318-1785-4d7f-a677-518cf3b32cc0.JPG)
 
 ![base model confusion plot test](https://user-images.githubusercontent.com/78061842/137782533-a8ecfb4c-5c72-433d-983a-9d26a06395ad.png)
+
 There were many other models run both with the spaCy notebook and the standard preprocessing notebook.
 The best model turned out to be the standard preprocessed data with a xgboost classification model (without SMOTE)
 
