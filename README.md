@@ -4,8 +4,7 @@ ________________________________________________________________________________
 # **Motivation**
 A hate crime is defined as a crime plus a biased motive.
 ![Capture](https://user-images.githubusercontent.com/78061842/137785605-eca7644e-cdd1-4be8-8089-37deca4dd731.JPG)
-According to justice.gov, from the years of 2004-2015 there were approxitamely 250,000  hate crimes commited each year. The majority of these cases were not reported to law inforcement. 
-
+According to justice.gov, from the years of 2004–2015 there were approximately 250,000 hate crimes committed each year. The majority of these cases were not reported to law enforcement.
 The pie chart below shows a breakdown of the bias motivation for hate crimes in 2020.
 
 ![bais motivation](https://user-images.githubusercontent.com/78061842/137782179-2bc7ed4a-d70b-4fbb-9a52-bde72d919da1.jpg)
