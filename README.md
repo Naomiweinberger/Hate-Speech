@@ -36,7 +36,6 @@ I printed word clouds and plotted word frequencies for each of the classes.
 ![offensive word cloud](https://user-images.githubusercontent.com/78061842/137782347-91401ea1-1c14-4809-bd9e-2b644b94e5eb.png)
 ![download](https://user-images.githubusercontent.com/78061842/137782358-9fab0f98-f0a0-4ae1-bc26-e43af61c524c.png)
 ![freq hate](https://user-images.githubusercontent.com/78061842/137782417-c1fddaaa-8b17-4c8f-b5ab-76d534694d16.png)
-
 ![frq offensive](https://user-images.githubusercontent.com/78061842/137782432-e40d62c4-4e72-4bac-bc4a-b883ff672d1c.png)
 ![freq normal](https://user-images.githubusercontent.com/78061842/137782422-f013f3a6-f3b6-4d05-95ac-8339dcc2f717.png)
 
