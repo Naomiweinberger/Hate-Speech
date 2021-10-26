@@ -47,7 +47,7 @@ ________________________________________________________________________________
 I created a function to clean the tweets (removing capitalization,punctuation, numbers etc.) Then I used lemmatokenizer to split the words into tokens and find the root meaning of each word. I then used a vectorizer to transform the data to numerical form. 
 _____________________________________________________________________________________________________________________________
 # **Data preprocessing Part 2**
-I also used a seperate notebook to preprocess the same data using the neural network library SpaCy. Cleaning the text isn't required for spaCy as it takes in the contextual meaning from the text. 
+I also used a seperate notebook to preprocess the same data using the neural network library spaCy. Cleaning the text isn't required for spaCy as it takes in the contextual meaning from the text. 
 _____________________________________________________________________________________________________________________________
 # **Modeling**
 I started off with a Naive Bayes as the base model. 
