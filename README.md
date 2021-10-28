@@ -1,7 +1,10 @@
 # **Hate Speech**
 Author: Naomi Weinberger
-_____________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________
 # **Motivation**
+
+**WARNING: DUE TO THE NATURE OF THE PROJECT,THIS NOTEBOOK CONTAINS HATEFUL SPEECH,THIS IN NO WAY REFLECTS THE VIEWS OF THE AUTHOR.**
+
 A hate crime is defined as a crime plus a biased motive.
 ![Capture](https://user-images.githubusercontent.com/78061842/137785605-eca7644e-cdd1-4be8-8089-37deca4dd731.JPG)
 According to justice.gov, from the years of 2004-2015 there were approxitamely 250,000  hate crimes commited each year. The majority of these cases were not reported to law inforcement. 
@@ -23,11 +26,11 @@ ________________________________________________________________________________
 I took two data sets from kaggle one entitled [Hate Speech and Offensive Language](https://www.kaggle.com/mrmorj/hate-speech-and-offensive-language-dataset) and the other one entitled [Twitter Sentiment Analysis](https://www.kaggle.com/arkhoshghalb/twitter-sentiment-analysis-hatred-speech) and synthesiszed them. The hate speech data set categorized tweets into three classes: hate speech, offensive language, and neither. The twitter sentiment analysis categorized the data into sexist/racist or neither. After exploring the data, I scraped twitter using tweepy (searching for some common words from the previous dataset) and created a validation set. I then tested the model on this validation set (more on that below)
 _____________________________________________________________________________________________________________________________
 # **EDA**
-**Disclaimer: The word clouds and the frequent word plots contain sensitive words due to the nature of the project.** 
 
 Below is a histogram depicting the amounts of tweets per class (0 is hate speech, 1 is offensive, and 2 in normal.)
 
 ![hist of class](https://user-images.githubusercontent.com/78061842/137782292-d4dcd242-be46-4ac5-8bba-a350a8be8e91.png) 
+
 As you can see, there is a clear class imbalance. We will use SMOTE on some of the models to see if it helps.
 I printed word clouds and plotted word frequencies for each of the classes. 
 
