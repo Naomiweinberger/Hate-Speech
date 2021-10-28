@@ -3,17 +3,19 @@ Author: Naomi Weinberger
 _________________________________________________________________________________________________________________________
 # **Motivation**
 
-**WARNING: DUE TO THE NATURE OF THE PROJECT,THIS NOTEBOOK CONTAINS HATEFUL SPEECH,THIS IN NO WAY REFLECTS THE VIEWS OF THE AUTHOR.**
+**WARNING: DUE TO THE NATURE OF THE PROJECT,THIS NOTEBOOK CONTAINS HATEFUL SPEECH. THIS IN NO WAY REFLECTS THE VIEWS OF THE AUTHOR.**
 
 A hate crime is defined as a crime plus a biased motive.
+
 ![Capture](https://user-images.githubusercontent.com/78061842/137785605-eca7644e-cdd1-4be8-8089-37deca4dd731.JPG)
-According to justice.gov, from the years of 2004-2015 there were approxitamely 250,000  hate crimes commited each year. The majority of these cases were not reported to law inforcement. 
+According to [justice.gov](justice.gov) , from the years of 2004-2015 there were approximately 250,000  hate crimes commited each year. The majority of these cases were not reported to law enforcement. 
 
 The pie chart below shows a breakdown of the bias motivation for hate crimes in 2020.
 
 ![bais motivation](https://user-images.githubusercontent.com/78061842/137782179-2bc7ed4a-d70b-4fbb-9a52-bde72d919da1.jpg)
 
 This next chart shows how those stats changed from 2019 to 2020. 
+
 ![bar-chart-1](https://user-images.githubusercontent.com/78061842/137782234-5d4c7afb-232a-4a80-99b5-b958db19f49a.jpg)
 
 I created an interactive map to show each state's hate crime rates from 2000-2020.
@@ -23,7 +25,7 @@ shows that there is a correlation between cities with high rates of hate speech 
 The goal of this project is to create a hate speech filter for twitter to effectively control hate speech. 
 _____________________________________________________________________________________________________________________________
 # **Data** 
-I took two data sets from kaggle one entitled [Hate Speech and Offensive Language](https://www.kaggle.com/mrmorj/hate-speech-and-offensive-language-dataset) and the other one entitled [Twitter Sentiment Analysis](https://www.kaggle.com/arkhoshghalb/twitter-sentiment-analysis-hatred-speech) and synthesiszed them. The hate speech data set categorized tweets into three classes: hate speech, offensive language, and neither. The twitter sentiment analysis categorized the data into sexist/racist or neither. After exploring the data, I scraped twitter using tweepy (searching for some common words from the previous dataset) and created a validation set. I then tested the model on this validation set (more on that below)
+I took two data sets from kaggle one entitled [Hate Speech and Offensive Language](https://www.kaggle.com/mrmorj/hate-speech-and-offensive-language-dataset) and the other one entitled [Twitter Sentiment Analysis](https://www.kaggle.com/arkhoshghalb/twitter-sentiment-analysis-hatred-speech) and synthesized them. The hate speech data set categorized tweets into three classes: hate speech, offensive language, and neither. The twitter sentiment analysis categorized the data into sexist/racist or neither. After exploring the data, I scraped twitter using tweepy (searching for some common words from the previous dataset) and created a validation set. I then tested the model on this validation set (more on that below)
 _____________________________________________________________________________________________________________________________
 # **EDA**
 
@@ -52,14 +54,17 @@ ________________________________________________________________________________
 I created a function to clean the tweets (removing capitalization,punctuation, numbers etc.) Then I used lemmatokenizer to split the words into tokens and find the root meaning of each word. I then used a vectorizer to transform the data to numerical form. 
 _____________________________________________________________________________________________________________________________
 # **Data preprocessing Part 2**
+
 I also used a seperate notebook to preprocess the same data using the neural network library spaCy. Cleaning the text isn't required for spaCy as it takes in the contextual meaning from the text. 
 _____________________________________________________________________________________________________________________________
 # **Modeling**
+
 I started off with a Naive Bayes as the base model. 
 
 ![base model](https://user-images.githubusercontent.com/78061842/137801475-ff32e318-1785-4d7f-a677-518cf3b32cc0.JPG)
 
 ![base model confusion plot test](https://user-images.githubusercontent.com/78061842/137782533-a8ecfb4c-5c72-433d-983a-9d26a06395ad.png)
+
 There were many other models run both with the spaCy notebook and the standard preprocessing notebook.
 The best model turned out to be the standard preprocessed data with a xgboost classification model (without SMOTE)
 
@@ -75,11 +80,17 @@ I then pickled the model and imported the data that I scraped from twitter. I ra
 ![validation confusion matrix](https://user-images.githubusercontent.com/78061842/137782813-44bfa4b1-dbe9-4d1d-94ff-59a99cfc36ae.png)
 
 # **Conclusion**
+
 While the model preformed very well on the test data, it only had a 58% accuracy on the validation set. This could because of the limitations of the validation set in terms of amount of tweets and key words chosen to create the data for each class. Also because the line of offensive and hate is a very narrow one, and it is very much a judgement call, the model has a hard time discerning one from the other.  
+
 # **Next Steps**
+
 There are many next steps that I would like to explore for this project:
 1) Collect a larger sample of tweets and explore the location data to see if the locations with high rates of late speech tweets correlate to the areas with high rates of hate crimes (as the study suggests)
 2) Look into famous hate crimes and see if there are high rates of hate speech surrounding those crimes
 3) Continue to tweak the model to get a better accuracy 
+4) Create a front-end with an imput box so that people can test their tweet to predict if it will be classified as hate speech. 
+
 # **For More Information**
+
 Check out the [presentation](https://www.canva.com/design/DAEsJmWtLWs/4GmtDUzmR-2X_FE5xfTpOw/view?utm_content=DAEsJmWtLWs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) or reach out via email weinberger.naomi@gmail.com
