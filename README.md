@@ -41,10 +41,12 @@ I printed word clouds and plotted word frequencies for each of the classes.
 
 ![offensive word cloud](https://user-images.githubusercontent.com/78061842/137782347-91401ea1-1c14-4809-bd9e-2b644b94e5eb.png)
 ![download](https://user-images.githubusercontent.com/78061842/137782358-9fab0f98-f0a0-4ae1-bc26-e43af61c524c.png)
-![freq hate](https://user-images.githubusercontent.com/78061842/137782417-c1fddaaa-8b17-4c8f-b5ab-76d534694d16.png)
+![Normal Speech Freq](https://user-images.githubusercontent.com/78061842/139445622-d05cc78c-53e6-4067-803f-f9c44996c63f.png)
 
-![frq offensive](https://user-images.githubusercontent.com/78061842/137782432-e40d62c4-4e72-4bac-bc4a-b883ff672d1c.png)
-![freq normal](https://user-images.githubusercontent.com/78061842/137782422-f013f3a6-f3b6-4d05-95ac-8339dcc2f717.png)
+![Offensive Speech Freq](https://user-images.githubusercontent.com/78061842/139445658-daf33ea2-7b7d-4271-bc69-74f6a4e5acdc.png)
+
+![Hate Speech Freq](https://user-images.githubusercontent.com/78061842/139445686-11232e91-cc2d-4410-88ae-d6a1a0d48cb7.png)
+
 
 _____________________________________________________________________________________________________________________________
 # **Date Pre-processing Part 1**
@@ -61,23 +63,28 @@ ________________________________________________________________________________
 
 I started off with a Naive Bayes as the base model. 
 
-![base model](https://user-images.githubusercontent.com/78061842/137801475-ff32e318-1785-4d7f-a677-518cf3b32cc0.JPG)
 
-![base model confusion plot test](https://user-images.githubusercontent.com/78061842/137782533-a8ecfb4c-5c72-433d-983a-9d26a06395ad.png)
+![base model new](https://user-images.githubusercontent.com/78061842/139445279-4cfdffd0-0ebc-48a3-86a5-aed3d790d278.JPG)
+
+![base model new 1](https://user-images.githubusercontent.com/78061842/139445278-8d76cfe2-402d-49dd-8ce0-d96cc0458d27.JPG)
+
 
 There were many other models run both with the spaCy notebook and the standard pre-processing notebook.
 The best model turned out to be the standard pre-processed data with a xgboost classification model (without SMOTE)
 
-![final model](https://user-images.githubusercontent.com/78061842/137797266-c0547454-c92d-4c07-8824-c4167e1ad509.JPG)
 
-![new final model confusion](https://user-images.githubusercontent.com/78061842/137782696-2f7683e4-51d7-4984-974c-3ed1fda8b02e.png)
+![final spacy model 1](https://user-images.githubusercontent.com/78061842/139443352-cf89f9e9-3347-45e8-8039-793deb92f759.JPG)
+
+![final spacy model 2](https://user-images.githubusercontent.com/78061842/139445508-32072931-67fc-4a59-bdaa-142ecde1648b.JPG)
+
 
 
 I then pickled the model and imported the data that I scraped from Twitter. I ran the model on the Twitter data as a validation set. 
 
-![validation](https://user-images.githubusercontent.com/78061842/137804150-736673a6-16ed-43b5-bba1-a95e9aad530c.JPG)
+![rfSMOTE_validation_2](https://user-images.githubusercontent.com/78061842/139444543-dea80e6d-497f-45fb-a575-339d4a398ec3.JPG)
 
-![validation confusion matrix](https://user-images.githubusercontent.com/78061842/137782813-44bfa4b1-dbe9-4d1d-94ff-59a99cfc36ae.png)
+![rfSMOTE_Validation_1](https://user-images.githubusercontent.com/78061842/139444586-904ceef3-de57-4c24-9d49-9558e49f1b13.JPG)
+
 
 # **Conclusion**
 
