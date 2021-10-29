@@ -87,16 +87,14 @@ I then pickled the model and imported the data that I scraped from Twitter. I ra
 
 
 # **Conclusion**
-
-While the model preformed very well on the test data, it only had a 58% accuracy on the validation set. This could because of the limitations of the validation set in terms of amount of Tweets and key words chosen to create the data for each class. Also, there is a fine line between hate speech and offensive languaget and as such, it is not always easy to differentiate between them. Accordingly, it is sometimes hard for a machine to make the distinction. 
+The model performed almost perfectly on the test data. On the validation set, the accuracy dropped but was still able to predict what class the tweet would be classified in with an 80% accuracy. 
 
 # **Next Steps**
 
 There are many next steps that I would like to explore for this project:
 1) Collect a larger sample of tweets and explore the location data to see if the locations with high rates of late speech tweets correlate to the areas with high rates of hate crimes (as the study suggests)
 2) Look into famous hate crimes and see if there are high rates of hate speech surrounding those crimes
-3) Continue to tweak the model to get a better accuracy 
-4) Create a front-end with an imput box so that people can test their tweet to predict if it will be classified as hate speech. 
+3) Create a front-end with an imput box so that people can test their tweet to predict if it will be classified as hate speech. 
 
 # **For More Information**
 
