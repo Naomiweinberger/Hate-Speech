@@ -22,7 +22,7 @@ I created an interactive map to show each state's hate crime rates from 2000-202
 
 <img width="772" alt="map" src="https://user-images.githubusercontent.com/78061842/139447092-a0f5a0a0-9ad4-4b92-9773-5b4ec438ec7b.PNG">
 
-a study from NYU entitled [Race, Ethnicity and National Origin-based Discrimination in Social Media and
+A study from NYU entitled [Race, Ethnicity and National Origin-based Discrimination in Social Media and
 Hate Crimes Across 100 U.S. Cities](https://arxiv.org/pdf/1902.00119.pdf) 
 shows that there is a correlation between cities with high rates of hate speech and cities with high rates of hate crimes. 
 The goal of this project is to create a hate speech filter for twitter to effectively control hate speech. 
@@ -53,6 +53,7 @@ I printed word clouds and plotted word frequencies for each of the classes.
 
 _____________________________________________________________________________________________________________________________
 # **Date Pre-processing Part 1**
+I used two different methods to preprocess the data. The picture below shows both processes.
 
 ![Ash Grey and Beige Dark Theme Professional Investor Business Presentation](https://user-images.githubusercontent.com/78061842/137785984-656e8de4-69cb-43ff-8778-81feab29cd6e.png)
 
@@ -73,7 +74,8 @@ I started off with a Naive Bayes as the base model.
 
 
 There were many other models run both with the spaCy notebook and the standard pre-processing notebook.
-The best model turned out to be the standard pre-processed data with a xgboost classification model (without SMOTE)
+
+The best model was a random forest model that was preprocessed with spaCy and utilized SMOTE.
 
 
 ![final spacy model 1](https://user-images.githubusercontent.com/78061842/139443352-cf89f9e9-3347-45e8-8039-793deb92f759.JPG)
