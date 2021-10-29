@@ -19,6 +19,9 @@ This next chart shows how those stats changed from 2019 to 2020.
 ![bar-chart-1](https://user-images.githubusercontent.com/78061842/137782234-5d4c7afb-232a-4a80-99b5-b958db19f49a.jpg)
 
 I created an interactive map to show each state's hate crime rates from 2000-2020.
+
+<img width="772" alt="map" src="https://user-images.githubusercontent.com/78061842/139447092-a0f5a0a0-9ad4-4b92-9773-5b4ec438ec7b.PNG">
+
 a study from NYU entitled [Race, Ethnicity and National Origin-based Discrimination in Social Media and
 Hate Crimes Across 100 U.S. Cities](https://arxiv.org/pdf/1902.00119.pdf) 
 shows that there is a correlation between cities with high rates of hate speech and cities with high rates of hate crimes. 
